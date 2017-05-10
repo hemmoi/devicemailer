@@ -16,7 +16,8 @@
     <hr> 
     
     <!-- Date/Time -->         
-    <p><span class="glyphicon glyphicon-time"></span> Was Posted:        
+    <p><span class="glyphicon glyphicon-time"></span> Was Posted: 
+       <%= time_ago_in_words(@article.updated_at) %> ago
     <hr>
     
     <!-- Preview Image -->          
@@ -32,9 +33,7 @@
     <!-- Comments Form -->                 
     <%= render 'comments/form' %> 
     
-    <div class="well">            
-      <h4>blah blah</h4> 
-    </div> 
+
  
     <hr> 
  
